@@ -13,6 +13,10 @@ public class picoFirmiBagle {
 		int guessCheck = 0;
 		int correctAnswer = 0;
 		
+		String outcomeA;
+		String outcomeB;
+		String outcomeC;
+		
 		
 		
 		String pico = "Pico";
@@ -32,9 +36,29 @@ public class picoFirmiBagle {
 		 * 			Bagel - no numbers guessed are used */
 		
 		
-		if( guessA == a ) {//Firmi is returned} 
-		if( guessA == b || guessA == c) {//Pico is returned} 
-		if( guessA != a && guessA != b && guessA != c ) {//Bagel is returned} 
+		if( guessA == a ) {			//Firmi is returned
+			outcomeA = firmi;
+		}else if( guessA == b || guessA == c) {		//Pico is returned
+			outcomeA = pico;
+		}else if( guessA != a && guessA != b && guessA != c ) {//Bagel is returned}
+			outcomeA = bagel;
+		}
+		
+		if( guessB == b ) {			//Firmi is returned
+			outcomeB = firmi;
+		}else if( guessB == a || guessB == c) {		//Pico is returned
+			outcomeB = pico;
+		}else if( guessB != b && guessB != a && guessB != c ) {//Bagel is returned}
+			outcomeB = bagel;
+		}
+		
+		if( guessC == c ) {			//Firmi is returned
+			outcomeC = firmi;
+		}else if( guessC == b || guessC == a) {		//Pico is returned
+			outcomeC = pico;
+		}else if( guessC != a && guessC != b && guessC != c ) {//Bagel is returned}
+			outcomeC = bagel;
+		}
 		
 		//Remember guesses and results
 		//
