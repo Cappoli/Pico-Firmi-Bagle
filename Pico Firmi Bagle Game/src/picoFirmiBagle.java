@@ -24,6 +24,19 @@ public class picoFirmiBagle {
 		
 				
 		//Generate three random single digit numbers 0-0-0 to 9-9-9
+	
+	public static int randomNumbers(int min, int max) {
+		
+		min = 0;
+		max = 9;
+		
+		
+		int f = (int) (Math.random()*((max-min)+1))+min;
+		
+		return f;
+		
+		
+	}
 		
 		//Player enters 3 numbers
 		
@@ -38,27 +51,29 @@ public class picoFirmiBagle {
 		 * 			Bagel - no numbers guessed are used */
 		
 		public void comparator() {
-		if( guessA == a ) {			//Firmi is returned
+			
+			
+		if( guessA == a ) {										//Firmi is returned
 			outcomeA = firmi;
-		}else if( guessA == b || guessA == c) {		//Pico is returned
+		}else if( guessA == b || guessA == c) {					//Pico is returned
 			outcomeA = pico;
-		}else if( guessA != a && guessA != b && guessA != c ) {//Bagel is returned
+		}else if( guessA != a && guessA != b && guessA != c ) {	//Bagel is returned
 			outcomeA = bagel;
 		}
 		
-		if( guessB == b ) {			//Firmi is returned
+		if( guessB == b ) {										//Firmi is returned
 			outcomeB = firmi;
-		}else if( guessB == a || guessB == c) {		//Pico is returned
+		}else if( guessB == a || guessB == c) {					//Pico is returned
 			outcomeB = pico;
-		}else if( guessB != b && guessB != a && guessB != c ) {//Bagel is returned
+		}else if( guessB != b && guessB != a && guessB != c ) {	//Bagel is returned
 			outcomeB = bagel;
 		}
 		
-		if( guessC == c ) {			//Firmi is returned
+		if( guessC == c ) {										//Firmi is returned
 			outcomeC = firmi;
-		}else if( guessC == b || guessC == a) {		//Pico is returned
+		}else if( guessC == b || guessC == a) {					//Pico is returned
 			outcomeC = pico;
-		}else if( guessC != a && guessC != b && guessC != c ) {//Bagel is returned
+		}else if( guessC != a && guessC != b && guessC != c ) {	//Bagel is returned
 			outcomeC = bagel;
 		}
 		
