@@ -10,6 +10,9 @@ public class picoFirmiBagle {
 	int guessCheck = 0;
 	int correctAnswer = 0;
 	
+	boolean picoYes;
+	boolean firmiYes;
+	
 	String outcomeA;
 	String outcomeB;
 	String outcomeC;
@@ -25,15 +28,13 @@ public class picoFirmiBagle {
 				
 		//Generate three random single digit numbers 0-0-0 to 9-9-9
 	
-	public static int randomNumbers(int min, int max) {
+	public void randomNumbers() {
 		
-		min = 0;
-		max = 9;
+		a = (int) (Math.random()*(10));
+		b = (int) (Math.random()*(10));
+		c = (int) (Math.random()*(10));
 		
 		
-		int f = (int) (Math.random()*((max-min)+1))+min;
-		
-		return f;
 		
 		
 	}
@@ -52,8 +53,19 @@ public class picoFirmiBagle {
 		
 		public void comparator() {
 			
+			firmiYes = false;
+			picoYes = false;
 			
-		if( guessA == a ) {										//Firmi is returned
+			
+			if(guessA == a || guessB == b || guessC == c) {
+				firmiYes = true;
+			}
+			if (guessA == b || guessA == c || guessB == a || guessB == c || guessC == a || guessC == b) {
+				picoYes = true;
+			}
+			
+			
+			/*if( guessA == a ) {										//Firmi is returned
 			outcomeA = firmi;
 		}else if( guessA == b || guessA == c) {					//Pico is returned
 			outcomeA = pico;
@@ -74,12 +86,12 @@ public class picoFirmiBagle {
 		}else if( guessC == b || guessC == a) {					//Pico is returned
 			outcomeC = pico;
 		}else if( guessC != a && guessC != b && guessC != c ) {	//Bagel is returned
-			outcomeC = bagel;
-		}
+			outcomeC = bagel;*/
 		
-		}
+				
+		
 		
 		//Remember guesses and results
 		//
-
+		}
 }
