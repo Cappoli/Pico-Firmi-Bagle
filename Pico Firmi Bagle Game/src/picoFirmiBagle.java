@@ -36,6 +36,7 @@ public class picoFirmiBagle {
 		
 	}
 		
+	
 		//Player enters 3 numbers
 		
 		//Check if player has guessed any number in the correct spot
@@ -62,7 +63,7 @@ public class picoFirmiBagle {
 			}
 			
 			
-		/*if( guessA == a ) {										//Firmi is returned
+		/*if( guessA == a ) {									//Firmi is returned
 			outcomeA = firmi;
 		}else if( guessA == b || guessA == c) {					//Pico is returned
 			outcomeA = pico;
