@@ -34,9 +34,6 @@ public class picoFirmiBagle {
 		b = (int) (Math.random()*(10));
 		c = (int) (Math.random()*(10));
 		
-		
-		
-		
 	}
 		
 		//Player enters 3 numbers
@@ -65,7 +62,7 @@ public class picoFirmiBagle {
 			}
 			
 			
-			/*if( guessA == a ) {										//Firmi is returned
+		/*if( guessA == a ) {										//Firmi is returned
 			outcomeA = firmi;
 		}else if( guessA == b || guessA == c) {					//Pico is returned
 			outcomeA = pico;
